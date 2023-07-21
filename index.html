@@ -1,1 +1,7 @@
-<script>location.href = new URLSearchParams(window.location.search).get('url');</script>
+<script>
+    const url = new URLSearchParams(window.location.search).get('url');
+    if(url.length != 0) {
+        location.href = url;
+    }
+</script>
+https://nottamion.github.io/Redirector?url=YOUR_URL
